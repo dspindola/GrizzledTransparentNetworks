@@ -20,6 +20,9 @@
     "paths": {
       "@/app/*": ["src/app/*"],
       "@/libs/*": ["src/libs/*"],
+      "@/stores/*": ["src/app/stores/*"],
+      "@/components/*": ["src/app/components/*"],
+      "@/hooks/*": ["src/app/hooks/*"],
       "!/server/*": ["src/types/server/*"],
       "!/client/*": ["src/types/client/*"]
     }

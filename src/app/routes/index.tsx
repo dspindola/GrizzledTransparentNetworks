@@ -1,17 +1,10 @@
-import {
-  SandpackCodeEditor,
-  SandpackPreview,
-  SandpackFileExplorer,
-  SandpackLayout,
-  SandpackProvider
-} from '@codesandbox/sandpack-react'
+import { Editor } from '@/components/Editor'
+import { Layout } from '@/components/Layout'
 
-export const Route = () => (
-  <SandpackProvider>
-    <SandpackLayout>
-      <SandpackFileExplorer />
-      <SandpackCodeEditor />
-      <SandpackPreview />
-    </SandpackLayout>
-  </SandpackProvider>
-)
+export const Route = () => {
+  return (
+    <Layout>
+      <Editor />
+    </Layout>
+  )
+}

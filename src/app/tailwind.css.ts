@@ -546,11 +546,50 @@ export const tailwind = `/*! tailwindcss v4.0.0-alpha.17 | MIT License | https:/
   .collapse {
     visibility: collapse;
   }
+  .absolute {
+    position: absolute;
+  }
   .relative {
     position: relative;
   }
+  .static {
+    position: static;
+  }
+  .top-0 {
+    top: var(--spacing-0, 0px);
+  }
+  .right-0 {
+    right: var(--spacing-0, 0px);
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+  .col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+  .col-span-10 {
+    grid-column: span 10 / span 10;
+  }
+  .row-span-1 {
+    grid-row: span 1 / span 1;
+  }
+  .row-span-3 {
+    grid-row: span 3 / span 3;
+  }
   .block {
     display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
   }
   .hidden {
     display: none;
@@ -564,25 +603,203 @@ export const tailwind = `/*! tailwindcss v4.0.0-alpha.17 | MIT License | https:/
   .table {
     display: table;
   }
+  .h-1 {
+    height: var(--spacing-1, 0.25rem);
+  }
+  .h-3 {
+    height: var(--spacing-3, 0.75rem);
+  }
+  .h-full {
+    height: 100%;
+  }
+  .h-max {
+    height: max-content;
+  }
+  .h-screen {
+    height: 100vh;
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  .w-1 {
+    width: var(--spacing-1, 0.25rem);
+  }
+  .w-1\/4 {
+    width: calc(1/4 * 100%);
+  }
+  .w-3 {
+    width: var(--spacing-3, 0.75rem);
+  }
+  .w-3\/4 {
+    width: calc(3/4 * 100%);
+  }
+  .w-10 {
+    width: var(--spacing-10, 2.5rem);
+  }
+  .w-20 {
+    width: var(--spacing-20, 5rem);
+  }
+  .w-60 {
+    width: var(--spacing-60, 15rem);
+  }
+  .w-64 {
+    width: var(--spacing-64, 16rem);
+  }
+  .w-full {
+    width: 100%;
+  }
+  .flex-1 {
+    flex: 1;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  .grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+  .grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+  .grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+  .grid-rows-19 {
+    grid-template-rows: repeat(19, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .gap-4 {
+    gap: var(--spacing-4, 1rem);
+  }
+  .rounded-md {
+    border-radius: var(--radius-md, 0.375rem);
+  }
+  .rounded-sm {
+    border-radius: var(--radius-sm, 0.125rem);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-none {
+    --tw-border-style: none;
+    border-style: none;
+  }
   .bg-black {
     background-color: var(--color-black, #000);
+  }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200, #e5e7eb);
+  }
+  .bg-slate-200 {
+    background-color: var(--color-slate-200, #e2e8f0);
+  }
+  .bg-slate-800 {
+    background-color: var(--color-slate-800, #1e293b);
+  }
+  .p-1 {
+    padding: var(--spacing-1, 0.25rem);
+  }
+  .p-2 {
+    padding: var(--spacing-2, 0.5rem);
+  }
+  .p-4 {
+    padding: var(--spacing-4, 1rem);
+  }
+  .pt-16 {
+    padding-top: var(--spacing-16, 4rem);
+  }
+  .italic {
+    font-style: italic;
+  }
+  .text-white {
+    color: var(--color-white, #fff);
   }
   .underline {
     text-decoration-line: underline;
   }
+  .shadow {
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .outline-none {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  .duration-100 {
+    transition-duration: 100ms;
+  }
+  .ease-in-out {
+    transition-timing-function: var(--transition-timing-function-in-out, cubic-bezier(0.4, 0, 0.2, 1));
+  }
+  .hover\:bg-gray-300 {
+    &:hover {
+      background-color: var(--color-gray-300, #d1d5db);
+    }
+  }
+  .hover\:bg-slate-500 {
+    &:hover {
+      background-color: var(--color-slate-500, #64748b);
+    }
+  }
+  .focus\:ring-0 {
+    &:focus {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentColor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .focus\:ring-offset-0 {
+    &:focus {
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-shadow: var(--tw-ring-inset,) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    }
+  }
+  .focus\:outline-none {
+    &:focus {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+    }
   }
 }
 @supports (-moz-orient: inline) {
@@ -594,6 +811,18 @@ export const tailwind = `/*! tailwindcss v4.0.0-alpha.17 | MIT License | https:/
       --tw-skew-x: skewX(0);
       --tw-skew-y: skewY(0);
       --tw-border-style: solid;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-colored: 0 0 #0000;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
       --tw-outline-style: solid;
     }
   }
@@ -653,6 +882,63 @@ export const tailwind = `/*! tailwindcss v4.0.0-alpha.17 | MIT License | https:/
   syntax: "<custom-ident>";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-colored {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-colored {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
 }
 @property --tw-outline-style {
   syntax: "<custom-ident>";

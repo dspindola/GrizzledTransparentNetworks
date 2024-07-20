@@ -28,6 +28,7 @@
     "@elysiajs/static": "^1.1.0",
     "@elysiajs/swagger": "^1.1.0",
     "@tailwindcss/cli": "^4.0.0-alpha.17",
+    "@tanstack/react-store": "^0.5.5",
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
     "clsx": "^2.1.1",
