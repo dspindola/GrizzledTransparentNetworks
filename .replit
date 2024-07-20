@@ -5,6 +5,13 @@ modules = ["nodejs-20", "typescript-language-server"]
 [nix]
 channel = "stable-24_05"
 
+[env]
+XDG_CONFIG_HOME="/home/runner/$REPL_SLUG/.config"
+XDG_CACHE_HOME="/home/runner/$REPL_SLUG/.cache"
+PATH="/home/runner/$REPL_SLUG/.config/npm/node_global/bin:/home/runner/$REPL_SLUG/.config/.bun/bin:$PATH"
+npm_config_prefix="/home/runner/$REPL_SLUG/.config/npm/node_global"
+BUN_INSTALL="/home/runner/$REPL_SLUG/.config/.bun"
+
 [[ports]]
 localPort = 8080
 externalPort = 80

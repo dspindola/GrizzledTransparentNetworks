@@ -1,12 +1,17 @@
 {
   "name": "grizzledtransparentnetworks",
-  "module": "src/index.ts",
+  "module": "src/server.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun run --port=8080 --smol --watch ./src/index.ts"
+    "dev": "bun run --port=8080 --smol --watch ./src/server.ts",
+    "clean": "rm -rf dist",
+    "format": "prettier --write ."
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/prettier": "^3.0.0",
+    "prettier": "^3.3.3",
+    "@trivago/prettier-plugin-sort-imports": "4.3.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
@@ -22,10 +27,13 @@
     "@elysiajs/eden": "^1.1.1",
     "@elysiajs/static": "^1.1.0",
     "@elysiajs/swagger": "^1.1.0",
+    "@tailwindcss/cli": "^4.0.0-alpha.17",
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
+    "clsx": "^2.1.1",
     "elysia": "^1.1.3",
     "react": "^19.0.0-rc-512b09b2-20240718",
-    "react-dom": "^19.0.0-rc-512b09b2-20240718"
+    "react-dom": "^19.0.0-rc-512b09b2-20240718",
+    "tailwindcss": "^4.0.0-alpha.17"
   }
 }

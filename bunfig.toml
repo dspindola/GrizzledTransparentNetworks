@@ -1,1 +1,6 @@
-preload = ["./build.client.ts"]
+preload = ["./.preload/build.client.js", "./.preload/build.statics.js", "./.preload/build.macros.js"]
+jsxImportSource = "react"
+jsx = "react-jsx"
+logLevel = "info"
+telemetry = false
+smol = true

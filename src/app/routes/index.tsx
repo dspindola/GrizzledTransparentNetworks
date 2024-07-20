@@ -1,8 +1,17 @@
-import { Sandpack } from "@codesandbox/sandpack-react";
-import { App } from "../main";
+import {
+  SandpackCodeEditor,
+  SandpackPreview,
+  SandpackFileExplorer,
+  SandpackLayout,
+  SandpackProvider
+} from '@codesandbox/sandpack-react'
 
 export const Route = () => (
-	<App>
-		<Sandpack />
-	</App>
-);
+  <SandpackProvider>
+    <SandpackLayout>
+      <SandpackFileExplorer />
+      <SandpackCodeEditor />
+      <SandpackPreview />
+    </SandpackLayout>
+  </SandpackProvider>
+)

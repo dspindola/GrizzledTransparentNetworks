@@ -1,0 +1,9 @@
+dist
+.data
+node_modules
+bun.lockb
+package-lock.json
+yarn.lock
+
+replit.nix
+.replits
