@@ -1,0 +1,10 @@
+run = "bun run dev"
+entrypoint = "src/index.ts"
+modules = ["nodejs-20", "typescript-language-server"]
+
+[nix]
+channel = "stable-24_05"
+
+[[ports]]
+localPort = 8080
+externalPort = 80
